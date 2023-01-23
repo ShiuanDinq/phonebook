@@ -32,6 +32,7 @@ let persons = [
 const app = express();
 
 app.use(cors());
+app.use(express.static("build"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
